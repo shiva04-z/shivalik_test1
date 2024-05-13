@@ -1,14 +1,14 @@
 import 'package:flutter/material.dart';
 
-class footwear extends StatefulWidget {
-  const footwear({super.key});
+class FootWear extends StatefulWidget {
+  const FootWear({super.key});
 
 
   @override
-  State<footwear> createState() => _footwearState();
+  State<FootWear> createState() => _FootWearState();
 }
 
-class _footwearState extends State<footwear> {
+class _FootWearState extends State<FootWear> {
   var dropValue="Footwear";
   @override
   Widget build(BuildContext context) {
@@ -18,7 +18,7 @@ class _footwearState extends State<footwear> {
         child: Icon(Icons.search,),
       )],
         title: DropdownButton(
-          icon: Icon(Icons.arrow_downward),
+          icon: const Icon(Icons.arrow_downward),
           elevation: 5,
           autofocus: true,
           dropdownColor: Colors.white,
@@ -39,7 +39,7 @@ class _footwearState extends State<footwear> {
         ),
       ),
       body: const Padding(
-        padding: const EdgeInsets.all(8.0),
+        padding: EdgeInsets.all(8.0),
         child: SingleChildScrollView(
           child: Column(
             children: [Row(
@@ -68,7 +68,6 @@ class _footwearState extends State<footwear> {
                       Text("\$ 38.0",style: TextStyle(fontWeight: FontWeight.bold,fontSize: 22),),
                       Text("kdhsdbhebhfdeh\nfhbebhfhdhfeh",style: TextStyle(fontSize:12),softWrap: true,),
                     ]
-          
                       ,),
                   ),
                 ),
